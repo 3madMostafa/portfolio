@@ -211,12 +211,14 @@ h6 {
 
 @media (max-width: 1199px) {
   .header {
-    left: -100%;
+    right: -100%;   /* ✅ كان left */
+    left: auto;     /* ✅ لازم تضيف دي */
   }
 }
 
 .header.header-show {
-  left: 0;
+  right: 0;         /* ✅ كان left */
+  left: auto;
 }
 
 .header .header-toggle {
